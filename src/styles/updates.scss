@@ -1,0 +1,101 @@
+.updates-section {
+    text-align: center;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        .highlight {
+            color: #1a73e8; // Google blue
+        }
+    }
+}
+
+.updates-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.update-card {
+    flex: 1 1 300px;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    background: #fff;
+
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        color: #555;
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: #1a73e8;
+        font-weight: 500;
+    }
+
+    img {
+        margin-top: 1rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &:hover {
+        transform: translateY(-6px);
+    }
+
+    &.blue {
+        background: #eaf2ff;
+    }
+
+    &.yellow {
+        background: #fff6e0;
+    }
+}
+
+.discover-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #202124;
+    margin: 32px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; // ensures horizontal centering
+    gap: 0.4rem;
+}
+
+.updates-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; // center content inside the pill
+    background: #e8f0fe;
+    color: #1a73e8;
+    font-weight: 600;
+    border-radius: 34px;
+    padding: 4px 18px 4px 10px;
+    margin: 0 0.1rem;
+    font-size: 1.18em;
+    box-shadow: 0 1px 4px 0 #a0c2fa22;
+    gap: 6px;
+
+    .fa-clock-rotate-left,
+    .fa-history,
+    // include history or rotate if you use different icons
+    .fa-rotate-right {
+        font-size: 1.13em;
+        margin-right: 5px;
+    }
+}
